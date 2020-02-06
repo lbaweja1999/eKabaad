@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../images/recycle-symbol.png">
+	<title>In house Pop-Up Collections</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../scripts/tcal.js"></script>
+	<link rel="stylesheet" href="../css/pickup.css">
+	<link rel="stylesheet" href="../css/tcal.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header>
+
+			<div class="number">
+				<span class="one">1</span>
+			</div>
+
+			<div class="header_text">In house Pop-Up Collections</div>
+
+		</header>
+
+		<form autocomplete="on" action="javascript" onsubmit="insert_value() data-netlify=" true" ">
+		
+		<p class=" main_text"> In house Pop-Up Collection items will be picked-up from your home within 2 working days. <Br>
+			</p>
+
+			<p class="calendar_text"><b>PICKUP DATE</b><br>
+				<input id="pick_date" name="Pickup_date" type="text" class="tcal" value="" autocomplete="date"
+					placeholder="14/12/2019" required />
+			</p>
+
+			<p class="time_text"><b>PICKUP TIME</b><br>
+				<input id="pick_time" name="Pickup_time" type="time" class="time" value="" placeholder="Select a time"
+					required />
+			</p>
+
+
+			<p class="name_text"><b>YOUR NAME</b><br>
+				<input id="fname" name="First_name" class="name" type="text" placeholder="First name"
+					autocomplete="additional-name" required>
+				<input id="lname" name="Last_name" class="name" type="text" placeholder="Last name" required>
+
+			</p>
+
+			<p class="mail_text"><b>EMAIL ADDRESS</b><br>
+				<input id="mail" name="Email" class="mail" type="text" placeholder="Ex.joe@joe.com" autocomplete="email"
+					required>
+			</p>
+
+			<p class="phone_text"><b>PHONE NUMBER</b><br>
+				<input id="no" name="Number" class="phone" type="text" placeholder="Ex. 555-555-5555" required>
+			</p>
+
+			<p class="Address"><b>ADDRESS</b><br>
+				<input id="add" name="address" class="Address" type="text" placeholder="House Number xyz"
+					autocomplete="address-line1" required>
+			</p>
+
+			<p class="Address"><b>Postal-code</b><br>
+				<input id="pin" name="Postal_code" class="Address" type="number" placeholder=""
+					autocomplete="postal-code" required>
+			</p>
+
+			<p class="Address"><b>State</b><br>
+				<input id="state" name="state" class="Address" type="text" placeholder="" autocomplete="address-level1"
+					required>
+			</p>
+
+			<p class="comments">Plastic Bottles
+				<textarea id="bttle" name="bottle_desc" rows="5" cols="50" name="description"
+					placeholder="Description if any"></textarea>
+				<p class="dropdown"> Container Size
+					<select id="bttlQ" name="bttleML" class="drpbtn" required>
+						<option value="500ML" selected>500</option>
+						<option value="1000ML">1000</option>
+						<option value="2000ML">2000</option>
+						<option value="5000ML">5000</option>
+					</select>
+					ML
+				</p>
+				<p class="dropdown"> Number of plastic Bottles
+					<input name="No_bttle" class="phone" type="number" placeholder="Enter Number" required>
+				</p>
+			</p>
+
+			<p class="comm"> Cans <br>
+				<textarea name="Can_desc" rows="5" cols="50" name="description"
+					placeholder="Description if any"></textarea>
+				<p class="dropdown"> Container Size
+					<select name="canMl" class="drpbtn" required>
+						<option value="200ML" selected>200</option>
+						<option value="300ML">300</option>
+						<option value="500ML">500</option>
+					</select>
+					ML
+				</p>
+				<p class="dropdown"> Number of Cans
+					<input name="No_cans" class="phone" type="number" placeholder="Enter Number" required>
+				</p>
+			</p>
+
+			<p class="comm"> Check Mark items which u want to recyle from the list.
+				<br>
+				<label class="container">Newspapers
+					<input name="Newspaper" type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container"> Copy / Registers / Magzines
+					<input name="Copy/reg/mag" type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container"> E-waste
+					<input name="E-waste" type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container"> Iron
+					<input name="Iron" type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container"> Cartoon Box
+					<input name="cartoon_box" type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container"> Tyre
+					<input name="Tyre" type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			</p>
+
+
+			<button class="btn" type="submit" value="Continue">Continue</button>
+
+		</form>
+
+
+</body>
+
+</html>

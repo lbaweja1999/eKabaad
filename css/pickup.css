@@ -1,0 +1,288 @@
+@font-face {
+    font-family: MyriadPro-Regular
+    src: url(MyriadPro-Regular.otf); 
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+
+header {
+	position: relative;
+	height: 67px;
+	border-bottom: 1px solid white;
+}
+
+.wrapper {
+
+	position: relative;
+	width: 1100px;
+	height: 1250px;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+.number {
+	position: relative;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #2e953e;
+	margin: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.one {
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 0 auto;
+}
+
+.header_text {
+    float: left;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 25px 0px 0px 20px; 
+}
+
+.main_text {
+	font-family: serif;
+	font-size: 18px;
+	margin: 20px;
+	font-weight: bold;
+}
+
+.chose {
+	margin-top: 20px;
+	width: 17px;
+	height: 17px;
+	outline: none;
+}
+
+
+.tcal {
+	background-color: darkseagreen ;
+	outline: none;
+	position: relative;
+	width: 210px;
+	height: 40px;
+	font-size: 16px;
+	display: inline-block;
+	border: 1px solid #bfbfbf;
+}
+
+.time {
+	background-color: darkseagreen ;
+	outline: none;
+	position: relative;
+	width: 230px;
+	height: 40px;
+	font-size: 16px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.calendar_text {
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+.time_text {
+	margin-left: 20px;
+}
+
+.name_text {
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 20px;
+
+	float: left;
+}
+
+.mail_text {
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 20px;
+	float: left;
+}
+
+.phone_text {
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.name {
+	font-size: 16px;
+	float: left;
+	width: 210px;
+	height: 43px;
+	margin-right: 20px;
+	padding-left: 20px;
+}
+
+.mail {
+	font-size: 16px;
+	float: left;
+	width: 240px;
+	height: 43px;
+	margin-right: 10px;
+	margin-left: 0px;
+	padding-left: 20px;
+}
+
+.Address{
+	font-size: 16px;
+	float: left;
+	width: 210px;
+	height: 43px;
+	margin-right: 20px;
+	padding-left: 20px;
+	margin-top: 4px;
+}
+
+.phone {
+	font-size: 16px;
+	width: 255px;
+	height: 43px;
+	padding-left: 20px;
+}
+
+.comments {
+	color: black;
+	font-size: 20px;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 90px;
+	text-transform: none;
+
+}
+
+.comm {
+	color: black;
+	font-size: 20px;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 40px;
+	text-transform: none;
+
+}
+
+
+
+textarea {
+	width: 1000px;
+    height: 51px;
+    border: 2px solid #bfbfbf;
+    outline: auto;
+
+}
+
+.dropdown{
+	color: black;
+	font-size: 20px;
+	position: relative;
+	margin-top: 15px;
+    margin-left: 20px;
+}
+
+.drpbtn{
+	background-color:#2e953e;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border: black;
+    cursor: auto;
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 45px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+
+  .checkmark {
+	position: absolute;
+    top: 1px;
+    left: 2px;
+    height: 27px;
+    width: 27px;
+    background-color: seagreen;
+  }
+
+  .container:hover input ~ .checkmark {
+	background-color:seashell;
+  }
+  
+
+  .container input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+
+  .checkmark:after { 
+	content: "";
+	position: absolute;
+	display: none;
+  }
+
+
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+
+  .container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+.btn {
+	position: relative;
+	background-color: #5b9546;
+	width: 108px;
+	height: 53px;
+	border-radius: 5px;
+	float: right;
+	margin: 20px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+}
