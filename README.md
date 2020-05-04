@@ -1,8 +1,7 @@
 # eKabaad
 Prototype for Build for Digital India Programme-Google
 
-# Website link
-https://ekabaad.netlify.app/
+# Website link https://ekabaad.netlify.app/
 
 # Running the website locally
 Step 1:Download the zip folder or clone the repository on your desktop.
